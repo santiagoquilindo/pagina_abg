@@ -1,0 +1,111 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    color:black;
+    background-color: goldenrod;
+}
+
+/* Estilos del header */
+header {
+    background-color: #000000; 
+    color: #FFD700; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos del contenedor logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacia los elementos de forma equitativa */
+    gap: 20px; /* Espacio entre los contenedores */
+}
+
+/* Estilos de la imagen */
+.logo-img {
+    flex: 1;
+}
+
+.logo-img img {
+    max-width: 70px;
+    background-color: red;
+}
+
+/* Estilos del nombre */
+.logo-name {
+    flex: 2; /* Le da más espacio al nombre */
+    text-align: center;
+    
+}
+
+.logo-name h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    color: #de3721;
+}
+
+/* Estilos de la descripción */
+.logo-description {
+    flex: 3; /* Le da más espacio a la descripción */
+    text-align: left; /* Puedes cambiarlo a 'center' o 'right' si prefieres */
+}
+
+.logo-description p {
+    margin: 0;
+    font-size: 18px;
+    font-style: italic;
+    color: #BDC3C7;
+}
+
+/* Estilos del navbar */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.navbar ul li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #bc891a;
+    color: #ffffff;
+}
+
+/* Centrar el nav y aplicar color dorado a los enlaces */
+nav {
+    display: flex;
+    justify-content: center; /* Centra el nav horizontalmente */
+    margin-top: 20px; /* Espacio entre el nav y el logo */
+}
+
+nav a {
+    color: #FFD700; /* Color dorado para los enlaces */
+    text-decoration: none;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d9511c; /* Color de acento al pasar el cursor */
+    color: #d5cdcd;
+}

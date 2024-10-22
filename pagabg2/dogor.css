@@ -1,0 +1,158 @@
+.headerprincipal {
+    background-color: rgb(9, 8, 8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    flex: 1;
+}
+
+.logo img {
+    max-width: 50%; /* Ajusta el tamaño de la imagen */
+    height: auto;
+}
+
+.tituloxd {
+    flex: 2;
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    margin-left: -20px; /* Ajusta este valor según lo necesites */
+}
+
+    
+
+
+.tituloxd h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #ffd700;
+}
+
+.tituloxd p {
+    margin: 0;
+    font-size: 16px;
+    color: #ffd700
+}
+
+.navegar {
+    flex: 1;
+}
+
+.navegar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.navegar ul li {
+    margin: 0;
+}
+
+.navegar ul li a {
+    text-decoration: none;
+    color: goldenrod;
+    padding: 10px;
+    background-color: rgb(20, 20, 21);
+    border-radius: 4px;
+}
+
+.navegar ul li a:hover {
+    background-color: rgb(216, 228, 39);
+}
+
+.servicios {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Dos columnas */
+    gap: 20px;
+}
+
+.servicio {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.servicio img {
+    width: 100%;
+    height: auto;
+}
+
+.servicio h3 {
+    font-size: 1.5em;
+    margin: 20px 0 10px;
+    color: #333;
+}
+
+.servicio p {
+    padding: 0 20px 20px;
+    color: #666;
+}
+
+.servicio:hover {
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #000; 
+    color: gold; 
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0; 
+}
+
+footer a {
+    color: #00aced; 
+    text-decoration: none; 
+    margin: 0 5px; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+footer p:last-child {
+    margin-bottom: 0; 
+}
+
+/* Estilos del icono de WhatsApp */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-icon img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon img:hover {
+    transform: scale(1.1); 
+}
+
+
+@media (max-width: 768px) {
+    .servicios-grid {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}

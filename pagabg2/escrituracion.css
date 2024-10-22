@@ -1,0 +1,160 @@
+/* Estilos globales */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos del header */
+.headerprincipal {
+    background-color: #090808;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    max-width: 30%;
+    height: auto;
+}
+
+
+
+.tituloxd h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Navegación */
+.navegar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navegar ul li a {
+    text-decoration: none;
+    color: gold;
+    padding: 10px;
+}
+
+.navegar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Sección de contenido */
+section.content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.image-container {
+    position: absolute; /* Asegura que la imagen esté detrás del texto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Mantiene la imagen detrás del contenido */
+    background-size: cover; 
+
+    
+}
+
+.background-image {
+    width: 100%;
+    height: 100%; /* Mantiene la proporción de la imagen */
+    opacity: 10; /* Controla la transparencia de la imagen */
+    
+}
+
+.parent-container { 
+    display: flex; 
+    justify-content: center;
+    position: relative; 
+}
+
+.text-container {
+    flex: 2;
+    padding: 20px;
+    text-align: left; 
+    margin: 0 auto; 
+    max-width: 600px; 
+    position: relative; 
+    z-index: 2; 
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #000; 
+    color: gold; 
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 5px 0; 
+}
+
+footer a {
+    color: #00aced; 
+    text-decoration: none; 
+    margin: 0 5px; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+footer p:last-child {
+    margin-bottom: 0; 
+}
+
+/* Estilos del icono de WhatsApp */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-icon img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon img:hover {
+    transform: scale(1.1); 
+}
+.headerprincipal  a{
+    background-color: rgb(0, 0, 0);
+    margin-right: 100px;
+}
+.tituloxd {
+    flex: 2;
+    text-align: center;
+    background-color: rgb(10, 10, 10);
+    margin-left: -20%; /* Ajusta este valor según lo necesites */
+    padding: 10px;
+    color: gold;
+}
