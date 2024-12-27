@@ -158,3 +158,11 @@ footer p:last-child {
     padding: 10px;
     color: gold;
 }
+.imagen-fondo {
+    filter: blur(5px);
+}
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad */
+    padding: 20px; 
+    border-radius: 10px;
+}
